@@ -127,16 +127,16 @@
 
 <!-- テキスト -->
 <div id="text">
-【33】Hello again! Let's talk more about the big badminton news. The rule changes from 21 points to 15 points. But why?
-The big reason is time. Old games are too long. Sometimes a game takes more than one hour! Long games are not good for TV. People want to see fast and exciting matches. This new rule makes the game shorter.
-Also, the game style will change. With 15 points, players cannot relax. They must run fast from the very first point. Every point is very important now. There is no time to rest!
-This makes the game difficult for players, but very fun for fans. This is a new, fast era for badminton!
+【36】On December 10, Australia introduced a world-first law banning social media for children under 16. The goal is to protect kids from addiction, cyberbullying, and dangerous people online. The whole world is watching this strict new rule.
+　Ten major platforms, including Instagram, TikTok, YouTube, and X, are included in the ban. These companies must use age-verification technology to identify and freeze accounts of users under 16. Most companies agreed to follow the law, even though they doubt it will effectively make children safer.
+　Prime Minister Albanese called it a "proud day" for Australia. He stated that families are taking control back from big tech companies. He wants children to enjoy their childhood and parents to have peace of mind. However, he admitted implementing this will not be easy.
+　Under this law, social media companies must take "reasonable steps" to stop under-16s from using their apps. If they fail, they face fines of up to 49.5 million Australian dollars. Importantly, there are no penalties for children or parents who break the rules.
 </div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="33.mp3" type="audio/mpeg">
+    <source src="36.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -149,12 +149,12 @@ This makes the game difficult for players, but very fun for fans. This is a new,
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> Badminton games will change to 15 points to make matches shorter and better for TV.
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> If children under 16 are caught using social media, they or their parents must pay a large fine to the government. 
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> The new game style will be very fast, so players must focus from the very first point.
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> The new law requires social media companies to use technology to stop users under 16 in order to protect them from online dangers. 
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> The games will become longer than before because fans want to watch slow matches. </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> Players can relax more in the new game because the points are not important.
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> Social media companies like Instagram and TikTok completely agree that this law is the best way to improve children's safety.  </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Prime Minister Albanese believes this law helps families take back control from tech giants, although he knows it will be difficult to implement.
  </span>
 </div>
 
@@ -175,8 +175,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: A・B
-  const correctAnswers = ["a","b"];
+  // 正解選択肢: B・D
+  const correctAnswers = ["b","d"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -201,6 +201,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
